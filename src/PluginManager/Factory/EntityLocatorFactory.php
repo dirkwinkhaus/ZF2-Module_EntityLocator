@@ -34,15 +34,14 @@ class EntityLocatorFactory extends AbstractPluginManagerFactory
             && isset($config['zf2']['entity_locator'])
             && isset($config['zf2']['entity_locator']['validate_entities'])
             && isset($config['zf2']['entity_locator']['entities_should_be_or_contain'])
+            && isset($config['zf2']['entity_locator']['share_by_default'])
         ) {
-            $validateEntities        = $config['zf2']['entity_locator']['validate_entities'];
-            $allowedClassOrInterface = $config['zf2']['entity_locator']['entities_should_be_or_contain'];
-
             /** @var EntityLocator $entityLocator */
             $entityLocator = parent::createService($serviceLocator);
 
-            $entityLocator->setAllowedClassOrStringName($allowedClassOrInterface);
-            $entityLocator->setValidateEntities($validateEntities);
+            $entityLocator->setShareByDefault($config['zf2']['entity_locator']['share_by_default']);
+            $entityLocator->setAllowedClassOrStringName($config['zf2']['entity_locator']['entities_should_be_or_contain']);
+            $entityLocator->setValidateEntities($config['zf2']['entity_locator']['validate_entities']);
 
             return $entityLocator;
         }

@@ -6,7 +6,10 @@ return [
             'validate_entities' => true,
 
             # what do the entities have to implement or extend from to be valid
-            'entities_should_be_or_contain' => \ZF2\Module\EntityLocator\PluginManager\EntityValidatorInterface::class
+            'entities_should_be_or_contain' => \ZF2\Module\EntityLocator\PluginManager\EntityValidatorInterface::class,
+
+            # share instances by default
+            'share_by_default' => false,
         ]
     ]
 ];
