@@ -22,7 +22,8 @@ class EntityLocatorFactory extends AbstractPluginManagerFactory
     /**
      * @param ServiceLocatorInterface $serviceLocator
      *
-     * @return \Zend\ServiceManager\AbstractPluginManager
+     * @return EntityLocator
+     * @throws MissingConfigurationException
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {

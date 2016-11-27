@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dirkwinkhaus
- * Date: 27.11.16
- * Time: 08:51
- */
 
 namespace ZF2\Module\EntityLocator\PluginManager;
 

@@ -65,7 +65,7 @@ class Module implements EntityLocatorProviderInterface
      */
     public function getEntityLocatorConfig()
     {
-        
+
         return [];
     }
 }
