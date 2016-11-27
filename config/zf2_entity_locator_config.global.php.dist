@@ -1,0 +1,12 @@
+<?php
+return [
+    'zf2' => [
+        'entity_locator' => [
+            # should entity instances be validated
+            'validate_entities' => true,
+
+            # what do the entities have to implement or extend from to be valid
+            'entities_should_be_or_contain' => \ZF2\Module\EntityLocator\PluginManager\EntityValidatorInterface::class
+        ]
+    ]
+];

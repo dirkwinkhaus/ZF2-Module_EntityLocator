@@ -1,0 +1,26 @@
+{
+    "name": "ZF2/Module-EntityLocator",
+    "description": "A service locator for entites",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "keywords": [
+        "zf2",
+        "module",
+        "entity",
+        "locator"
+    ],
+    "require": {
+        "zendframework/zendframework": "~2.5",
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4" : {
+            "ZF2\\Module\\EntityLocator\\": [
+                "src/"
+            ]
+        },
+        "classmap": [
+            "Module.php"
+        ]
+    }
+}
